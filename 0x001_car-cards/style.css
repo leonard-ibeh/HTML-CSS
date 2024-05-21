@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(27, 27, 27);
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background: white;
+  /* border: 1px solid red; */
+  width: 250px;
+  height: 530px;
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+.card-image {
+  background-color: azure;
+  height: 150px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.car-1 {
+  background-image: url("https://media.istockphoto.com/id/1782123421/photo/happy-young-couple-hugging-their-brand-new-white-car.webp?s=2048x2048&w=is&k=20&c=z6smVr5hmaIwcxdcN88n9zMGdSriVFn-9s9ymXfDSqA=");
+}
+.car-2 {
+  background-image: url("https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FyfGVufDB8fDB8fHww");
+}
+
+.car-3 {
+  background-image: url("https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNhcnxlbnwwfHwwfHx8MA%3D%3D");
+}
+
+.card h1 {
+  padding-bottom: 5px;
+}
+.card p span {
+  font-size: larger;
+}
+.card p {
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+.card a {
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 15px 20px;
+  border-radius: 10px;
+}
+.card:hover {
+  background-color: rgb(62, 62, 62);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.7s ease;
+}
