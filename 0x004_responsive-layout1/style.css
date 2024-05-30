@@ -1,9 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Major+Mono+Display&family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .container {
   display: grid;
+  height: 100vh;
+  color: rgb(21, 2, 5);
+  border: 1px solid red;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 1.5fr 1.3fr 0.8fr;
+  grid-template-areas:
+    "navbar navbar navbar navbar"
+    "sidebar main main main"
+    "sidebar box1 box2 box3"
+    "sidebar footer footer footer";
+  grid-gap: 0.3rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+nav {
+  background: #add8e6;
+  grid-area: navbar;
+}
+main {
+  background: #f08080;
+  grid-area: main;
+}
+.sidebar {
+  background: #90ee90;
+  grid-area: sidebar;
+}
+.box1 {
+  background: #fafad2;
+  grid-area: box1;
+}
+.box2 {
+  background: #ffa07a;
+  grid-area: box2;
+}
+.box3 {
+  background: #778899;
+  grid-area: box3;
+}
+
+footer {
+  background: #ffb6c1;
+  grid-area: footer;
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 2fr 0.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas:
+      "navbar"
+      "main"
+      "sidebar"
+      "box1"
+      "box2"
+      "box3"
+      "footer";
+  }
 }
